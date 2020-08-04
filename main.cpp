@@ -13,5 +13,5 @@
 
 int main( void )
   {
-  printf( "This is a test.\n" );
+  printf( "Testing the preprocessor.\n" );
   }
