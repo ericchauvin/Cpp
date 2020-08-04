@@ -2,7 +2,8 @@
 
 rem chdir C:\cygwin64\bin
 
-SET PATH=%PATH%;\cygwin64\bin\;
+rem SET PATH=%PATH%;\cygwin64\bin\;
+SET PATH=%PATH%;\minGW\bin\;
 
 rem Put output in that filename:
 rem -o filename
@@ -42,7 +43,8 @@ rem C:\cygwin64\bin\gcc main.c -S -m64 -fno-asynchronous-unwind-tables 2> BuildO
 rem Levels of optimization: -O1
 
 cd \EricMain\Cpp
-C:\cygwin64\bin\g++ main.cpp -o main.exe -Wall -O1 -m64 2> Build.log
+// C:\cygwin64\bin\g++ main.cpp -o main.exe -Wall -O1 -m64 2> Build.log
+C:\mingw\bin\g++ main.cpp -o main.exe -Wall -O1 2> Build.log
 
 rem This will make gcc call the assembler and linker:
 rem C:\cygwin64\bin\gcc main.s -o main.exe -Wall -Wextra 2> BuildOut.txt
@@ -53,4 +55,3 @@ rem C:\cygwin64\bin\gcc -print-sysroot-headers-suffix 1> BuildOut.txt
 rem Notepad Build.log
 
 rem pause
-
