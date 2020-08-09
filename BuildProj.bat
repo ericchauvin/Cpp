@@ -43,7 +43,11 @@ rem C:\cygwin64\bin\gcc main.c -S -m64 -fno-asynchronous-unwind-tables 2> BuildO
 rem Levels of optimization: -O1
 
 cd \EricMain\Cpp
-C:\cygwin64\bin\g++ main.cpp -o main.exe -Wall -O1 -m64 2> Build.log
+
+rem -mwindows to link as a Windows GUI application
+
+C:\cygwin64\bin\g++ main.cpp -o main.exe -mwindows -Wall -O1 -m64 2> Build.log
+
 rem C:\mingw\bin\g++ main.cpp -o main.exe -Wall -O1 2> Build.log
 
 rem This will make gcc call the assembler and linker:
