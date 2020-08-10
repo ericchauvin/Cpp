@@ -40,13 +40,12 @@ rem -fvar-tracking
 
 rem C:\cygwin64\bin\gcc main.c -S -m64 -fno-asynchronous-unwind-tables 2> BuildOut.txt
 
-rem Levels of optimization: -O1
-
 cd \EricMain\Cpp
 
 rem -mwindows to link as a Windows GUI application
+rem C:\cygwin64\bin\g++ main.cpp -o main.exe -mwindows -Wall -O1 -m64 2> Build.log
 
-C:\cygwin64\bin\g++ main.cpp -o main.exe -mwindows -Wall -O1 -m64 2> Build.log
+C:\cygwin64\bin\g++ main.cpp -o main.exe -Wall -O1 -m64 2> Build.log
 
 rem C:\mingw\bin\g++ main.cpp -o main.exe -Wall -O1 2> Build.log
 
