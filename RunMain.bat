@@ -1,7 +1,8 @@
 @echo off
 echo This is RunMain.bat.
 
-SET PATH=%PATH%;\cygwin64\bin\;
+rem Put the dll in the same directory or set this path.
+rem SET PATH=%PATH%;\cygwin64\bin\;
 
 rem mingw needs to find a libGcc or something.
 rem SET PATH=%PATH%;\mingw\bin\;
