@@ -7,7 +7,20 @@
 
 
 
+// inside a class:
+// const static int n = 1;
+// private, protected, public
+
+//    X::f();   static member function
+
+class X
+  {
+  static int n;
+  }; 
+
+
 bool basicThingsAreRight();
+
 
 
 int main( void )
@@ -20,6 +33,7 @@ int main( void )
 
   printf( "Things are OK.\n" );
   }
+
 
 
 
